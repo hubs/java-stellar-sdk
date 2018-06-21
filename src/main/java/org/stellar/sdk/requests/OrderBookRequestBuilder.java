@@ -61,7 +61,8 @@ public class OrderBookRequestBuilder extends RequestBuilder {
 
   @Override
   public RequestBuilder limit(int number) {
-    throw new RuntimeException("Not implemented yet.");
+	super.limit(number);
+    return this;
   }
 
   @Override
